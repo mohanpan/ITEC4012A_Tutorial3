@@ -52,7 +52,7 @@ app.get('/api/cats', (req, res) => {
 
     //return dummy data
     const cats = ["British Short hair", "Rag-doll", "Russian Red"];
-    res.send(cats);
+    res.send(JSON.stringify(cats));
 });
 
 //running the express http server on the port we specified
